@@ -26,8 +26,8 @@ var apos = require("apostrophe")({
     sandwich: {},
 
     // piece types
-    poems: {},
-    "poems-pages": {},
+    poems: { extend: "apostrophe-pieces" },
+    "poems-pages": { extend: "apostrophe-pieces-pages" },
     "poems-widgets": {},
     // widgets
     "fancy-button-widgets": {}
