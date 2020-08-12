@@ -26,6 +26,7 @@ var apos = require("apostrophe")({
     // piece types
     poems: {},
     "poems-pages": {},
-    "poems-widgets": {}
+    "poems-widgets": {},
+    "fancy-button-widgets": {}
   }
 });
