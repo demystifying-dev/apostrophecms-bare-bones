@@ -4,5 +4,8 @@
   <div class="main-content">
     <h3>Default greetings!</h3>
     <p>Defaulting is so much fun</p>
+    {{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {
+      toolbar: [ 'Bold', 'Italic' ]
+    }) }}
   </div>
 {% endblock %}
