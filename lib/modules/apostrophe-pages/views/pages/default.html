@@ -8,4 +8,15 @@
       toolbar: [ 'Bold', 'Italic' ]
     }) }}
   </div>
+{{ apos.area(data.page, 'body', {
+  widgets: {
+    'apostrophe-rich-text': {
+      toolbar: [ 'Bold', 'Italic' ]
+    },
+    'apostrophe-images': {
+      size: 'full'
+    }
+  }
+}) }}
 {% endblock %}
+
