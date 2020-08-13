@@ -22,10 +22,22 @@ var apos = require("apostrophe")({
     "apostrophe-templates": {
       viewsFolderFallback: path.join(__dirname, "views")
     },
-    // gives error in present form
-    sandwich: {},
+
+    "apostrophe-pages": {
+      types: [
+        {
+          name: "default",
+          label: "Default"
+        },
+        {
+          name: "home",
+          label: "Home"
+        }
+      ]
+    },
 
     // piece types
+    sandwich: {},
     poems: { extend: "apostrophe-pieces" },
     "poems-pages": { extend: "apostrophe-pieces-pages" },
     "poems-widgets": {},
