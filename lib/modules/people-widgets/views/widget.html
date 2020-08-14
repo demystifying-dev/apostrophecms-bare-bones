@@ -1,4 +1,5 @@
-{% for piece in data.widget._pieces %}
+<div class="people">
+  {% for piece in data.widget._pieces %}
   <h4>
     {% if piece._url %}<a href="{{ piece._url }}">{% endif %}
     {{ piece.title }}
@@ -20,4 +21,5 @@
       )
     }}
   </h4>
-{% endfor %}
+  {% endfor %}
+</div>
