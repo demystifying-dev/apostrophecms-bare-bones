@@ -1,12 +1,15 @@
-{% extends "layout.html" %}
-{% block title %}{{ data.piece.title }}{% endblock %}
-
-{% block main %}
+{% extends "layout.html" %} {% block title %} {{ data.piece.title }} {% endblock
+%} {% block main %}
 <div class="people main-content">
-  <h2>{{ data.piece.title }}
-  {{ apos.singleton(data.piece, 'thumbnail', 'apostrophe-images') }}
+  <h2>
+    {{ data.piece.title }} {{ apos.singleton(data.piece, 'thumbnail',
+    'apostrophe-images') }}
   </h2>
 
-  {{ apos.area(data.piece, 'body') }}
+  {{ apos.area( data.piece, 'body') }}
+  <h4>Poems</h4>
+  {% for poem in data.piece._poems %}
+  <p><a href="{{ poem._url }}">{{ poem.title }}</a></p>
+  {% endfor %}
 </div>
 {% endblock %}
