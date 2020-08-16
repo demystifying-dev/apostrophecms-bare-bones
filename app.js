@@ -34,7 +34,7 @@ var apos = require("apostrophe")({
     sandwich: {},
     poems: { extend: "apostrophe-pieces" },
     "poems-pages": { extend: "apostrophe-pieces-pages" },
-    "poems-widgets": {},
+    "poems-widgets": { extend: "apostrophe-pieces-widgets" },
     // widgets
     "fancy-button-widgets": {},
   },
